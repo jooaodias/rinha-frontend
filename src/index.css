@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  flex-direction: column;
+}
+
+pre {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.container input[type="file"] {
+  display: none;
+}
+
+.container label {
+  border-radius: 5px;
+  border: 1px solid #000;
+  opacity: 0.7;
+  background: linear-gradient(180deg, #e4e4e4 0%, #f7f7f7 100%);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.file-title {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.file-content-div {
+  max-height: 800px;
+  max-width: 500px;
+  overflow-y: auto;
+  border: 2px solid #bfbfbf;
+  padding: 12px;
+
+  scrollbar-width: 6px;
+  scrollbar-color: #bfbfbf;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+  }
+}
+
